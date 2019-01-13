@@ -1,0 +1,20 @@
+{
+  "name": "01-intro-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "start": "node index.js",
+    "vasya": "node index.js"
+  },
+  "keywords": [],
+  " author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
