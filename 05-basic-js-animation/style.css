@@ -1,0 +1,15 @@
+body {
+    position: relative;
+}
+
+div {
+    position: absolute;
+    top: 85%;
+    left: 0;
+
+    transition: width 0.5s;
+}
+
+img {
+   width: 80px;
+}
