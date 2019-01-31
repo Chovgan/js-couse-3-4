@@ -1,0 +1,21 @@
+body {
+    position: relative;
+}
+
+div {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+    transition: width 0.5s;
+}
+
+img {
+    width: 40%;
+}
+
+.big-image {
+    width: 80%;
+}
+
+

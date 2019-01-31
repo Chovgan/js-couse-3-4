@@ -1,0 +1,35 @@
+<html>
+   <head>
+       <title>Login form</title>
+   </head>
+   <body>
+       <form>
+           Name:<br>
+           <input id="name" class="form-name" type="text" name="name"><br>
+           Email:<br>
+           <input id="email" class="form-email" type="text" name="email"><br>
+           <button name="c" type="button">Submit</button>
+       </form>
+       <script>
+      // var btn = document.getElementsByTagName(“button”)[0];
+      var btn = document.querySelector("button")
+      var nameField = document.querySelector("#name")
+      var emailField = document.querySelector("#email")
+
+      btn.addEventListener("click", function(){
+          if(nameField.value.length <= 3 && (emailField.value.length <= 2 || !emailField.value.includes('@'))){
+              alert("Invalid name & email");
+          } 
+          else if(nameField.value.length <= 3 && emailField.value.length >= 3 && emailField.value.includes('@')){
+              alert("Invalid name")
+          }
+          else if(nameField.value.length >= 4 && (emailField.value.length <= 2 || !emailField.value.includes('@'))){
+              alert("Hello " + nameField.value + ". Please insert the valid email address")
+          }
+          else{
+              alert("Hello " + nameField.value + " " + emailField.value)
+          }
+      })
+       </script>
+   </body>
+</html>
