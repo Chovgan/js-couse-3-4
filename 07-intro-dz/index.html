@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./style1.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="my-header">
+            <div class="row">
+                <div class="col-4">
+                    <img id="fjords-image" alt="Responsive image" class="img-fluid fjords-image">
+                            </div>
+                            <div class="col-8">
+                                <div class="about-me">
+                                <h1>
+                                    Name
+                                    <small class="text-muted">Kristinaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</small>
+                                </h1>
+                                <h2>
+                                    Age
+                                    <small class="text-muted">Who knows????????????????????????????</small>
+                                </h2>
+                                <h3>
+                                    Interests
+                                    <small class="text-muted">Travellingggggggggggggggggggggggg</small>
+                                </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class="subscribe-email">
+                            <label for="exampleInputName1">Your name</label>
+                                <input id="name" type="name" class="form-control" id="exampleInputName1" placeholder="Your name" name="name">
+                            <label for="exampleInputEmail1">Email address</label>
+                                <input id="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
+                        <div class="subscribe-button"> 
+                            <button type="button" class="btn btn-dark">Subscribe</button>
+                        </div>
+                        </div>
+                    </form>
+                    <script>
+                            var btn = document.querySelector("button")
+                            var nameField = document.querySelector("#name")
+                            var emailField = document.querySelector("#email")
+                             btn.addEventListener("click", function(){
+                                if(nameField.value.length <= 3 && (emailField.value.length <= 2 || !emailField.value.includes('@'))){
+                                    alert("Invalid name & email");
+                                } 
+                                else if(nameField.value.length <= 3 && emailField.value.length >= 3 && emailField.value.includes('@')){
+                                    alert("Invalid name")
+                                }
+                                else if(nameField.value.length >= 4 && (emailField.value.length <= 2 || !emailField.value.includes('@'))){
+                                    alert("Hello " + nameField.value + ". Please insert the valid email address")
+                                }
+                                else{
+                                    alert("Hello " + nameField.value + ". " + "Thanks for subscription!")
+                                }
+                            })
+                    </script>
+
+                </div>
+                <script src="./app.js"></script>
+</body>
+
+</html>

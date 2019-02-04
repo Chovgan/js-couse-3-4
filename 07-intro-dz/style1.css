@@ -1,0 +1,26 @@
+.fjords-image {
+    width: 400px;
+    padding: 20px;
+}
+
+.about-me {
+    padding: 20px;
+}
+
+
+.subscribe-email {
+    position: absolute;
+    width:300px;
+    height:300px;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}
+
+.subscribe-button {
+    position: relative;
+    padding: 20px;
+}
+
+
