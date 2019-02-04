@@ -34,36 +34,20 @@
                     </div>
 
                     <form>
-                        <div class="subscribe-email">
+                        <div class="submit-technologies">
                             <label for="exampleInputName1">Your name</label>
                                 <input id="name" type="name" class="form-control" id="exampleInputName1" placeholder="Your name" name="name">
-                            <label for="exampleInputEmail1">Email address</label>
-                                <input id="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
-                        <div class="subscribe-button"> 
-                            <button type="button" class="btn btn-dark">Subscribe</button>
+                            <label for="exampleFormControlSelect1">Choose your favourite technlogy</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Python</option>
+                                  <option>JS</option>
+                                  <option>Java</option>
+                                </select>
+                        <div class="submit-button"> 
+                            <button type="button" class="btn btn-dark">Submit</button>
                         </div>
                         </div>
                     </form>
-                    <script>
-                            var btn = document.querySelector("button")
-                            var nameField = document.querySelector("#name")
-                            var emailField = document.querySelector("#email")
-                             btn.addEventListener("click", function(){
-                                if(nameField.value.length <= 3 && (emailField.value.length <= 2 || !emailField.value.includes('@'))){
-                                    alert("Invalid name & email");
-                                } 
-                                else if(nameField.value.length <= 3 && emailField.value.length >= 3 && emailField.value.includes('@')){
-                                    alert("Invalid name")
-                                }
-                                else if(nameField.value.length >= 4 && (emailField.value.length <= 2 || !emailField.value.includes('@'))){
-                                    alert("Hello " + nameField.value + ". Please insert the valid email address")
-                                }
-                                else{
-                                    alert("Hello " + nameField.value + ". " + "Thanks for subscription!")
-                                }
-                            })
-                    </script>
-
                 </div>
                 <script src="./app.js"></script>
 </body>
